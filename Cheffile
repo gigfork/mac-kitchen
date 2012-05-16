@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'zip_app', git: 'git://github.com/fnichol/chef-zip_app.git'
+cookbook 'homebrew', git: 'git://github.com/mathie/chef-homebrew.git'
