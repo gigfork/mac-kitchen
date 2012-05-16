@@ -3,10 +3,11 @@ Mac Kitchen
 
 To get started with the process on a new Mac the only thing you
 have to manually install is **Xcode**, its **Command Line Tools** and
-this kitchen, of course.
+this kitchen.
 
-The prerequisites for the installation a Mac with Mac Os 10.7 Lion or
-higher.
+The prerequisites for the installation a Mac with Mac OS 10.7+. The
+bootstrap process is assuming that the user's shell is bash. This is
+important for the proper configuration of [rbenv](github/rbenv).
 
 Installing Xcode
 ----------------
