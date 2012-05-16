@@ -30,5 +30,5 @@ rbenv global $RUBY_VERSION
 rbenv rehash
 
 ## Install prerequisites
-gem install chef chef-solo librarian
+bundle install
 rbenv rehash
