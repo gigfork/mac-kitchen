@@ -7,7 +7,8 @@ this kitchen.
 
 The prerequisites for the installation a Mac with Mac OS 10.7+. The
 bootstrap process is assuming that the user's shell is bash. This is
-important for the proper configuration of [rbenv](github/rbenv).
+important for the proper configuration of
+[rbenv](https://github.com/sstephenson/rbenv).
 
 Installing Xcode
 ----------------
