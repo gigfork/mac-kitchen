@@ -1,0 +1,1 @@
+{ "run_list": ["role[reporta_mac_osx]", "recipe[croaker::dotfiles]", "recipe[croaker::defaults]", "role[reporta_dev]"] }

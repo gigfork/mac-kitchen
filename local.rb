@@ -1,4 +1,4 @@
-chef_root ||= File.expand_path(File.join(File.dirname(__FILE__), '..'))
+chef_root = File.expand_path(File.dirname(__FILE__))
 state_root = File.expand_path('~/.chef/state')
 
 data_bag_path   File.join(chef_root, 'data_bags')

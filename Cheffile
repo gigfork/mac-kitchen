@@ -3,5 +3,4 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'zip_app', git: 'git://github.com/fnichol/chef-zip_app.git'
-cookbook 'homebrew', git: 'git://github.com/mathie/chef-homebrew.git'
+cookbook 'pivotal_workstation', :git => 'git://github.com/croaker/pivotal_workstation.git'

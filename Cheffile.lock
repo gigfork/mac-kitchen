@@ -1,18 +1,10 @@
 GIT
-  remote: git://github.com/fnichol/chef-zip_app.git
+  remote: git://github.com/croaker/pivotal_workstation.git
   ref: master
-  sha: b855e5754c575d761858e6a39ce2c36b886b5b9a
+  sha: d7fa143341cefa1bfc26e5d18487b4de5725ba50
   specs:
-    zip_app (0.2.3)
-
-GIT
-  remote: git://github.com/mathie/chef-homebrew.git
-  ref: master
-  sha: 48e29a75e21acd15e609e19e8a916c0bfe4c0864
-  specs:
-    homebrew (1.0.0)
+    pivotal_workstation (1.0.0)
 
 DEPENDENCIES
-  homebrew (>= 0)
-  zip_app (>= 0)
+  pivotal_workstation (>= 0)
 
