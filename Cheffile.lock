@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/croaker/pivotal_workstation.git
   ref: master
-  sha: d7fa143341cefa1bfc26e5d18487b4de5725ba50
+  sha: 74802bc155962759f0240fe19277dc5c847834eb
   specs:
     pivotal_workstation (1.0.0)
 

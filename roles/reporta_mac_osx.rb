@@ -2,6 +2,7 @@ name 'reporta_mac_osx'
 description 'The general config of workstations at Reporta AG.'
 run_list(
   'recipe[utils::readline]',
+  'recipe[utils::defaults]',
   'recipe[zsh]',
   'recipe[pivotal_workstation::git]',
   'recipe[pivotal_workstation::git_config_global_defaults]',
@@ -27,7 +28,8 @@ default_attributes(
   },
   'iterm2' => {
     'version' => '1_0_0_20120726',
-    'checksum' => '19538b6be5cb6f97e34aa729983a90ebc7a0e7ea'
+    'checksum' => '19538b6be5cb6f97e34aa729983a90ebc7a0e7ea',
+    'tmux_enabled' => true
   },
   'rbenv' => {
     'rubies' => {

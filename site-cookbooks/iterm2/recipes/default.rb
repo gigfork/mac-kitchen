@@ -20,8 +20,14 @@ download_file = "iTerm2-#{node['iterm2']['version']}"
 
 utils_app download_file do 
   app "iTerm"
-  source "http://iterm2.googlecode.com/files/iTerm2-#{node['iterm2']['version']}.zip"
+  source "http://iterm2.googlecode.com/files/#{download_file}.zip"
   checksum node['iterm2']['checksum']
+end
+
+cookbook_file "#{WS_LIBRARY}/Preferences/com.googlecode.iterm2.plist" do
+  source "com.googlecode.iterm2.plist"
+  user WS_USER
+  mode "0600"
 end
 
 include_recipe "iterm2::tmux" if node['iterm2']['tmux_enabled']
