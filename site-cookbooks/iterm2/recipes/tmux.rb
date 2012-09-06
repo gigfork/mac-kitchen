@@ -1,6 +1,7 @@
 download_file = "iTerm2-#{node['iterm2']['version']}.zip" 
 
 brew_install "automake"
+brew_install "pkg-config"
 brew_install "libevent"
 brew_install "reattach-to-user-namespace"
 
