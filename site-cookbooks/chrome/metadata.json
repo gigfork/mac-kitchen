@@ -1,6 +1,6 @@
 {
-  "name": "1password",
-  "description": "Installs 1Password",
+  "name": "chrome",
+  "description": "Installs/Configures chrome",
   "long_description": "",
   "maintainer": "YOUR_COMPANY_NAME",
   "maintainer_email": "YOUR_EMAIL",
@@ -26,5 +26,5 @@
   },
   "recipes": {
   },
-  "version": "1.0.0"
+  "version": "0.0.0"
 }

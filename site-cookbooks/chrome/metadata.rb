@@ -1,2 +1,3 @@
-name "chrome"
-description      "Installs/Configures chrome"
+name         "chrome"
+description  "Installs/Configures chrome"
+depends      "utils"

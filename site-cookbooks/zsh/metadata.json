@@ -1,6 +1,6 @@
 {
-  "name": "1password",
-  "description": "Installs 1Password",
+  "name": "zsh",
+  "description": "Installs Zsh",
   "long_description": "",
   "maintainer": "YOUR_COMPANY_NAME",
   "maintainer_email": "YOUR_EMAIL",
@@ -8,7 +8,7 @@
   "platforms": {
   },
   "dependencies": {
-    "utils": ">= 0.0.0"
+    "pivotal_workstation::homebrew": ">= 0.0.0"
   },
   "recommendations": {
   },
