@@ -24,6 +24,13 @@ Running Chef-Solo
 -----------------
 First you should clone this repository to a directory of your choice and
 enter the directory in the Terminal application. 
+
+Next install all external cookbooks using librarian:
+
+```
+librarian-chef install
+```
+
 Now you are almost ready to run chef solo. Before running chef solo you should 
 copy the `nodes/example.json` to `YOUR_NAME.json` and edit it to your liking.
 
