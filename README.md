@@ -1,24 +1,39 @@
 Mac Kitchen
 ===========
+The "Mac Kitchen" is a chef kitchen that resembles a collection of
+cookbooks for Mac OS X. Currently only version 10.8 is supported.
 
-To get started with the process on a new Mac the only thing you
-have to manually install is **Xcode**, its **Command Line Tools** and
-this kitchen.
+Getting Started
+---------------
+Mac Kitchen expects that Xcode 4.4+ and it's command line tools, the
+chef gem, and librarian to be installed.
 
-The prerequisites for the installation a Mac with Mac OS 10.7+. The
-bootstrap process is assuming that the user's shell is bash. This is
-important for the proper configuration of
-[rbenv](https://github.com/sstephenson/rbenv).
-
-Installing Xcode
-----------------
+### Installing Xcode
 You can install Xcode via the Mac App Store. After you are
-done installing Xcode open it up and got to the preferences. Under
-downloads you can then install the Command Line Tools. This gives you a
-basic foundation to install the rest of the apps through the bootstrap
-script.
+done installing Xcode open it up and go to `Xcode -> Preferences`.
+In the downloads section click on "Install" next to "Command Line Tools". 
 
-Bootstrap the Mac
+### Installing Chef and Librarian
+Next you need to install the chef and librarian gems:
+```
+sudo gem install chef librarian --no-rdoc --no-ri
+```
+Now you are ready to run the chef client on a fresh workstation.
+
+Running Chef-Solo
 -----------------
-wip
+First you should clone this repository to a directory of your choice and
+enter the directory in the Terminal application. 
+Now you are almost ready to run chef solo. Before running chef solo you should 
+copy the `nodes/example.json` to `YOUR_NAME.json` and edit it to your liking.
 
+Once you are done editing your personal node-file you are ready to run
+the chef client:
+
+```
+sudo chef-solo -c solo.rb -j nodes/YOUR_NAME.json
+```
+
+After the chef run has completed it's recommended to restart your system
+to make sure that everything is in order and all changes have taken
+effect.
