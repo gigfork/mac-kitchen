@@ -2,10 +2,8 @@ name 'reporta_mac_osx'
 description 'The general config of workstations at Reporta AG.'
 run_list(
   'recipe[utils::readline]',
-  'recipe[utils::defaults]',
   'recipe[zsh]',
   'recipe[pivotal_workstation::git]',
-  'recipe[pivotal_workstation::git_config_global_defaults]',
   'recipe[1password]',
   'recipe[dropbox]',
   'recipe[firefox]',
@@ -14,12 +12,12 @@ run_list(
   'recipe[alfred]',
   'recipe[pivotal_workstation::rbenv]',
   'recipe[pivotal_workstation::java]',
+  'recipe[utils::defaults]',
   'recipe[pivotal_workstation::disable_front_row]',
-  'recipe[pivotal_workstation::grid]',
   'recipe[pivotal_workstation::keyboard_preferences]',
   'recipe[pivotal_workstation::set_finder_show_user_home_in_sidebar]',
   'recipe[pivotal_workstation::defaults_fast_key_repeat_rate]',
-  'recipe[mac_os_x::settings]'
+  'recipe[utils::git_repos]'
 )
 default_attributes(
   'one_password' => {

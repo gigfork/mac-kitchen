@@ -1,1 +1,13 @@
-{ "run_list": ["role[reporta_mac_osx]", "recipe[croaker::dotfiles]", "role[reporta_dev]"] }
+{
+  "run_list": ["role[reporta_mac_osx]",  "role[reporta_dev]"],
+  "git_repos": {
+    "git://github.com/croaker/vimfiles.git": {
+      "path": ".vim",
+      "finalize": "rake"
+    },
+    "git://github.com/croaker/zshfiles.git": {
+      "path": ".zshfiles",
+      "finalize": "rake"
+    }
+  }
+}
