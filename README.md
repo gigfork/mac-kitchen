@@ -5,8 +5,8 @@ cookbooks for Mac OS X. Currently only version 10.8 is supported.
 
 Getting Started
 ---------------
-Mac Kitchen expects that Xcode 4.4+ and it's command line tools, the
-chef gem, and librarian to be installed.
+Mac Kitchen expects Xcode 4.4+, Xcodes command line tools, the
+chef gem, and the librarian gem to be installed.
 
 ### Installing Xcode
 You can install Xcode via the Mac App Store. After you are
