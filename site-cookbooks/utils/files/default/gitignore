@@ -1,0 +1,8 @@
+.*.sw?
+.svn
+.DS_Store
+*.tmproj
+.idea
+.powenv
+*.rbc
+*.orig

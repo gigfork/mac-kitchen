@@ -2,6 +2,7 @@ download_file = "iTerm2-#{node['iterm2']['version']}.zip"
 
 brew_install "automake"
 brew_install "libevent"
+brew_install "reattach-to-user-namespace"
 
 run_unless_marker_file_exists("tmux-#{node['iterm2']['tmux_version']}") do
   remote_file "Download the iTerm2 archive" do
