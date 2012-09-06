@@ -9,7 +9,7 @@ action :install do
   end
 
   execute "unzip #{new_resource.download_file}" do
-    command "unzip -o #{new_resource.download_file}.zip -d /tmp && mv #{::File.join("/tmp", app_file)} #{path}"
+    command "unzip -oq #{new_resource.download_file}.zip -d /tmp && mv #{::File.join("/tmp", app_file)} #{path}"
     user WS_USER
     not_if { ::File.exists?(::File.join(path, app_file)) }
   end
